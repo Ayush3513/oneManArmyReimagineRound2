@@ -413,6 +413,7 @@ nav{
     scale:0;
     pointer-events: none;
     letter-spacing: .04vw;
+    display: none;
 }
 
 .lazrev{
