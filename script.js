@@ -593,7 +593,7 @@ left2.addEventListener("mousemove", function(e){
   })
   vid.play()
  gsap.to(".cursor-2",{
-  x: e.clientX - 420,
+  x: e.clientX - 380,
   y: e.clientY - 35,
   duration:0.5,
   scale:1
