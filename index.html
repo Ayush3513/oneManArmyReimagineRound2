@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+  
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <!-- Recommended -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting-cells.css"
+    />
+  </head>
+  <body>
+    <div class="cursor-2">Click</div>
+    <div class="cursor-3">Drag</div>
+    <div class="loader">
+    
+      <div class="pre-loader">
+        <p>Loading</p>
+        <div class="counter">
+          <div class="digit1">
+            <div class="num">0</div>
+            <div class="num offset">1</div>
+          </div>
+          <div class="digit2">
+            <div class="num">0</div>
+            <div class="num offset">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+            <div class="num">7</div>
+            <div class="num">8</div>
+            <div class="num">9</div>
+            <div class="num">0</div>
+          </div>
+          <div class="digit3">
+            <div class="num">0</div>
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+            <div class="num">7</div>
+            <div class="num">8</div>
+            <div class="num">9</div>
+          </div>
+          <div class="digit4">%</div>
+        </div>
+        <div class="progress-bar"></div>
+      </div>
+      <div id="hero-imgs">
+        <img src="./assets/pexels-photo-170811.webp" alt="">
+        <img src="./assets/pexels-photo-707046.webp" alt="">
+        <img src="assets/DI23_000194211-m4_3_16to7.webp" alt="">
+        <img src="assets/cq5dam.resized.img.1680.large.time1687167306674.webp" alt="">
+        <img class="last" src="./assets/bmw-vision-next-100-concept-car.webp" alt="">
+      </div>
+      </div>
+
+      <div class="nav-box">
+    <nav>
+      <img
+      id="nav-img"
+      src="https://www.bmw.in/content/dam/bmw/common/images/logo-icons/BMW/BMW_White_Logo.svg.asset.1670245093434.svg"
+      alt=""
+    />
+    <div class="menu-btn-open">
+      Menu
+      <span id="span1"></span><id="span2" span></span>
+    </div>
+  </nav>
+    <div class="menu-overlay">
+      <div class="menu-nav">
+        <img
+      id="nav-img"
+      src="https://www.bmw.in/content/dam/bmw/common/images/logo-icons/BMW/BMW_White_Logo.svg.asset.1670245093434.svg"
+      alt=""
+    />
+    <div class="menu-close-btn">Close</div>
+      </div>
+      <div class="menu-cols">
+        <div class="col">
+          <div class="bhidio">
+            <div class="bhidio-preview"></div>
+            <div class="bhidio-details">
+              <p><i class="ri-play-circle-fill"></i> Play Video</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="menu-link">
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+          </div>
+          <div class="menu-link">
+            <a href="#">Models</a>
+            <a href="#">Models</a>
+          </div>
+          <div class="menu-link">
+            <a href="#">Electric</a>
+            <a href="#">Electric</a>
+          </div>
+          <div class="menu-link">
+            <a href="#">Contact</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="menu-link">
+            <a href="#">More BMW</a>
+            <a href="#">More BMW</a>
+          </div>
+          <div class="btn">
+            <a href="#">Take A Ride</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-footer">
+        <div class="menu-divider">
+        </div>
+        <div class="menu-footer-copy">
+          <div class="slogan"><p>Sheer Driving Pleasure</p></div>
+          <div class="socials">
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+
+    <video class="lazrev" src="./assets/Lazrev-Made-with-Clipchamp.webm"></video>
+    
+    <div class="fixed_target" id="fixed-target"></div>
+     
+    <div class="fixed" data-scroll data-scroll-sticky data-scroll-target="#fixed-target" >
+      <h1></h1>
+    </div>
+
+
+
+    <div class="main">
+    
+      <div class="page1">
+        <div class="overlay"></div>
+        <video
+          autoplay
+          loop
+          muted
+          src="./assets/hero2 - Made with Clipchamp.webm"
+        ></video>
+        <div class="page1-h1" id="h1">
+          <h1>Experience</h1>
+        </div>
+        <div id="wrapp">
+          <h4>Luxury</h4>
+        </div>
+      </div>
+      <div class="page3">
+        <div class="a-wrap">
+          <h3>BOOK YOUR BMW</h3>
+        </div>
+        <div class="container">
+          <div id="slide">
+            <div class="item">
+              <div class="image">
+                <img src="./assets/1stt.webp" alt="" />
+              </div>
+              <div class="content">
+                <div class="left">
+                  <h1>Z4 M40i</h1>
+                </div>
+                <div class="right">
+                  <h2>BMW</h2>
+                  <h3>Z4 M40i</h3>
+                  <h4>MAXIMUM SPORTINESS</h4>
+                  <h5>0 to 100 km/ in <span>4.5</span> seconds</h5>
+                  <h6>
+                    Starting from <br />
+                    <span>₹ 9,090,000</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <img class="chalo" src="./assets/68265720137.webp" alt="" />
+              </div>
+              <div class="content">
+                <div class="left">
+                  <h1>COUPE</h1>
+                </div>
+                <div class="right">
+                  <h2>BMW</h2>
+                  <h3>M4 COMPETITION COUPE</h3>
+                  <h4>AN M KNOWS NO LIMIT</h4>
+                  <h5>0 to 100 km/ in <span>3.5</span> seconds</h5>
+                  <h6>
+                    Starting from <br />
+                    <span>₹ 1,53,00,000</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <img src="./assets/74564796957.webp" alt="" />
+              </div>
+              <div class="content">
+                <div class="left">
+                  <h1 >M340i</h1>
+                </div>
+                <div class="right">
+                  <h2>BMW</h2>
+                  <h3>M340i</h3>
+                  <h4>ELEGANCE IS OVERLOADED</h4>
+                  <h5>0 to 100 km/ in <span>4.4</span> seconds</h5>
+                  <h6>
+                    Starting from <br />
+                    <span>₹ 72,90,000</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="butt">
+            <button id="prev"><i class="ri-arrow-left-circle-fill"></i></button>
+            <button id="next">
+              <i class="ri-arrow-right-circle-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-grid">
+        <div class="itemsss">
+          <div class="itmss" id="item-1">
+            <div class="items-img">
+              <img src="./assets/images_unsplash_com__photo-1619362280286-f1f8fd5032ed.webp" alt="" />
+            </div>
+            <div class="item-copy">
+              <div class="item-copy1">
+                <div class="shape">
+                  <div id="number">01</div>
+                  <div class="text-right">Performance</div>
+                </div>
+              </div>
+              <div class="item-copy2">
+                <div class="shape">
+                <div class="cut">Speed</div>
+                <div class="text-right">Power</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="itmss" id="item-2">
+            <div class="items-img">
+              <img src="./assets/podimg2.webp" alt="" />
+            </div>
+            <div class="item-copy">
+              <div class="item-copy1">
+                <div class="shape">
+                  <div id="number">02</div>
+                  <div class="text-right">luxury</div>
+                </div>
+              </div>
+              <div class="item-copy2">
+                <div class="shape">
+                <div class="cut">comfort</div>
+                <div class="text-right">Elegance</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="itmss" id="item-3">
+            <div class="items-img">
+              <img src="./assets/images_unsplash_com__photo-1616455164843-dc474e264ba6.webp" alt="" />
+            </div>
+            <div class="item-copy">
+              <div class="item-copy1">
+                <div class="shape">
+                  <div id="number">03</div>
+                  <div class="text-right">Technology</div>
+                </div>
+              </div>
+              <div class="item-copy2">
+                <div class="shape">
+                <div class="cut">innovation</div>
+                <div class="text-right">dynamics</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+        </div>
+      </div>
+
+      <div class="page4">
+        
+        <div class="sectionn">
+          <div class="marqueee">
+            <div class="marquee__inner">
+
+              
+              <div class="marquee__part">
+                customise Your <span>bmw</span>
+                <div class="arrow">
+                  <img src="./assets/gemini-fill.png" alt="">
+                </div>
+              </div>
+             
+
+              <div class="marquee__part">
+                customise Your <span>bmw</span>
+                <div class="arrow">
+                  <img src="./assets/gemini-fill.png" alt="">
+                </div>
+              </div>
+             
+
+              <div class="marquee__part">
+                customise Your <span>bmw</span>
+                <div class="arrow">
+                  <img src="./assets/gemini-fill.png" alt="">
+                </div>
+              </div>
+             
+
+              <div class="marquee__part">
+                customise Your <span>bmw</span>
+                <div class="arrow">
+                  <img src="./assets/gemini-fill.png" alt="">
+                </div>
+              </div>
+             
+
+              <div class="marquee__part">
+                customise Your <span>bmw</span>
+                <div class="arrow">
+                  <img src="./assets/gemini-fill.png" alt="">
+                </div>
+              </div>
+             
+
+              <div class="marquee__part">
+                customise Your <span>bmw</span>
+                <div class="arrow">
+                  <img src="./assets/gemini-fill.png" alt="">
+                </div>
+              </div>
+             
+
+              <div class="marquee__part">
+                customise Your <span>bmw</span>
+                <div class="arrow">
+                  <img src="./assets/gemini-fill.png" alt="">
+                </div>
+              </div>
+             
+             
+             
+              </div>
+            </div>
+          </div>
+        
+        <div class="a-wrap">
+          <h3>configure</h3>
+        </div>
+        <div class="line-patti"></div>
+        <model-viewer
+          src="./assets/bmw_m4_f82.glb"
+          camera-controls
+          tone-mapping="neutral"
+          poster="poster.webp"
+          shadow-intensity="2"
+          camera-orbit="-52.88deg 80.88deg 9.766m"
+          field-of-view="30deg"
+          min-camera-orbit="auto auto 9.564m"
+          min-field-of-view="28.79deg"
+          auto-rotate
+          environment-image="legacy"
+          exposure="1.17"
+        >
+        </model-viewer>
+        <div class="anime-patti">
+          <div class="elements" id="elem1">
+            <div class="patti-cont">
+              <h3>LUXURY</h3>
+              <h4>Luxury crafted meticulously.</h4>
+            </div>
+          </div>
+          <div class="elements" id="elem1">
+            <div class="patti-cont">
+              <h3>Performance</h3>
+              <h4>Performance redefined excellence.</h4>
+            </div>
+          </div>
+          <div class="elements" id="elem1">
+            <div class="patti-cont">
+              <h3>Innovation</h3>
+              <h4>Innovation fuels progress.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page5">
+        
+        <section class="marquees">
+          <div class="marquee-container" id="marquee-1">
+            <div class="marquee">
+              <div class="itemss"><img src="./assets/mar-1.webp" alt="" /></div>
+              <div class="itemss-with-text"><h1>Elegance</h1></div>
+              <div class="nikalo" class="itemss"><video autoplay muted loop src="./assets/i5-00-teaser-hd.webm"></video></div>
+              <div class="itemss"><img src="./assets/mar-4.webp" alt="" /></div>
+              <div class="itemss"><img src="./assets/marrr-2.webp" alt="" /></div>
+              <div class="itemss"><img src="https://images.unsplash.com/photo-1526996677846-ad66aca3283c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D " alt="" /></div>
+            </div>
+          </div>
+
+          <div class="marquee-container" id="marquee-2">
+            <div class="marquee">
+              <div class="itemss"><img src="./assets/marr-3.webp" alt="" /></div>
+              <div class="nikalo" class="itemss"><video autoplay loop muted src="./assets/vnkx-01-stage-hd.webm"></video></div>
+              <div class="nikalo" class="itemss"><video autoplay loop muted src="./assets/eink-00-teaser-hd.webm"></video></div>
+              <div class="itemss"><img src="./assets/img.webp" alt="" /></div>
+              <div id="gap" class="itemss-with-text"><h1>Performance</h1></div>
+              <div class="itemss"><img src="./assets/images_unsplash_com__photo-1595787383726-3d2d6ccb7ca0.webp" alt="" /></div>
+            </div>
+          </div>
+
+          <div class="marquee-container" id="marquee-3">
+            <div class="marquee">
+              <div class="itemss"><img src="./assets/marrr-6.webp" alt="" /></div>
+              <div class="itemss-with-text"><h1>Innovation</h1></div>
+              <div class="itemss"><img src="./assets/marrr-4.webp" alt="" /></div>
+              <div class="nikalo" class="itemss"><video autoplay loop muted src="./assets/sky-04-media-hd.webm"></video></div>
+              <div class="itemss"><img src="./assets/e822709fd4885a1bc00d079a24fc8e36.webp" alt="" /></div>
+              <div class="itemss"><img src="./assets/marrrr-2.webp" alt="" /></div>
+            </div>
+          </div>
+
+          <div class="marquee-container" id="marquee-4">
+            <div class="marquee">
+              <div class="itemss"><img src="./assets/marrr-7.webp" alt="" /></div>
+              <div class="itemss"><img src="./assets/marrr-8.webp" alt="" /></div>
+              <div id="blur" class="itemss">
+                <img id="blur-i" src="./assets/c79db7585a9644fc2f3614dae506a2c3.webp" alt="" />
+              </div>
+              <div class="nikalo" class="itemss"><video autoplay loop muted src="./assets/chori.webm"></video></div>
+              <div class="itemss-with-text"><h1>Excellence</h1></div>
+              <div class="itemss"><img src="./assets/mar-3.webp" alt="" /></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="page6">
+        <div class="marker-wrapper">
+        </div>
+        
+       
+        
+        <div class="slider">
+          <div class="slider-wrapper">
+            <div class="slide">
+              <img src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/podcast-teaser/fwd-02-media-square.jpg?imwidth=1280" alt="">
+            </div>
+            <div class="slide">
+              <img src="http://bmw.avinasxhhh.in/images/podcast/3.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="http://bmw.avinasxhhh.in/images/podcast/6.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="http://bmw.avinasxhhh.in/images/podcast/2.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="http://bmw.avinasxhhh.in/images/podcast/5.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/slidess-1.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page7">
+        <h1>Awards</h1>
+        <div class="preview">
+          <div class="pre-img" id="pre-img1"></div>
+          <div class="pre-img" id="pre-img2"></div>
+        </div>
+
+        <div class="menu">
+          <div class="menu-item">
+            <div class="info">
+              <p> BMW 5 Series</p>
+            </div>
+            <div class="name">
+              <p>Top Safety Pick</p>
+            </div>
+            <div class="tag">
+              <p>2024</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="info">
+              <p>BMW i7 Series</p>
+            </div>
+            <div class="name">
+              <p>Women's World Car</p>
+            </div>
+            <div class="tag">
+              <p>2022</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="info">
+              <p>BMW 7 Series</p>
+            </div>
+            <div class="name">
+              <p>Premium Car of the Year</p>
+            </div>
+            <div class="tag">
+              <p>2024</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="info">
+              <p>BMW 4 Series </p>
+            </div>
+            <div class="name">
+              <p>Best Convertible</p>
+            </div>
+            <div class="tag">
+              <p>2023</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="info">
+              <p>BMW i7 Series</p>
+            </div>
+            <div class="name">
+              <p>Luxury Car</p>
+            </div>
+            <div class="tag">
+              <p>2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="row row-1 border-bottom">
+          <div class="brand-name flex-center border-right">
+            <div class="headerr">
+              <h1>Contact Us</h1>
+            </div>
+          </div>
+          <div class="brand-contact flex-center">
+            <div class="contact-container">
+              <p>Home</p>
+              <p>Models</p>
+             <p> Electric</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-2 border-bottom">
+          <div class="hero-copy border-right">
+            <i-row class="i-row i-row1">
+              <div class="col projects">
+                <div class="project-lists">
+                  <p>Accessories</p>
+                  <p>BMW in your country</p>
+                  <p>Connected test vehicle</p>
+                  <p>BMW group</p>
+                  <p>Data protaction</p>
+                </div>
+                <div class="h-stripe"><span>SINCE 1916</span></div>
+              </div>
+              <div class="col circle-text flex-center">
+                <div class="text">
+                  <img src="https://www.bmw.in/content/dam/bmw/common/images/logo-icons/BMW/BMW_White_Logo.svg.asset.1670245093434.svg" alt="">
+                </div>
+              </div>
+            </i-row>
+            <div class="i-row i-row2">
+              <div class="col lets-talk flex-center">
+                <p>Let's take a <span>Ride</span></p>
+              </div>
+              <div class="col stripe">
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="heero-img">
+            <div class="img-container border-right">
+              <div class="box"></div>
+            <div>
+              <img class="imagee" src="https://i.pinimg.com/736x/83/08/3f/83083f163d07737ecf0eb38fa21a41de.jpg" alt="">
+            </div>
+          </div>
+          <div class="empty-rows">
+            <div class="white-space border-bottom"></div>
+            <div class="white-space"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
