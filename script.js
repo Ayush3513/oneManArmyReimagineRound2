@@ -681,9 +681,9 @@ document.getElementById("prev").onclick = function(){
 document.addEventListener("DOMContentLoaded", function(){
   const imageSources = [
     './assets/slidess-1.webp',
-    'https://4kwallpapers.com/images/wallpapers/bmw-7-series-1080x2160-12621.jpg',
+    './assets/bmw-7-series-1080x2160-12621.webp',
     'https://wallpapercave.com/wp/wp12081667.jpg',
-    'https://wallpaper.forfun.com/fetch/30/30a10aa4f1cff6c00d095934b02ab3c4.jpeg?h=900&r=0.5',
+    './assets/30a10aa4f1cff6c00d095934b02ab3c4.webp',
     'https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/bmwapp-wallpaper/bawp-49-media-hd.jpg',
   ]
 
