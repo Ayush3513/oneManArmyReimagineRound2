@@ -1376,7 +1376,7 @@ animation-direction: alternate;
     flex: 5;
 }
 .brand-name .headerr h1{
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 800;
     text-transform: uppercase;
     font-family: monument;
@@ -2408,7 +2408,6 @@ section img{
     letter-spacing: .03vw;
     background-color:transparent;
     padding: 0.8vw 3vw;
-    /* border-radius: 50px; */
     color:rgb(255, 255, 255);
     position: relative;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
